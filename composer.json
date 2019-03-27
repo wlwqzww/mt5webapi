@@ -1,0 +1,43 @@
+{
+    "name": "aemaddin/mt5webapi",
+    "description": ":description",
+    "license": "license",
+    "authors": [
+        {
+            "name": "Amr Emad",
+            "email": "aemaddin@gmail.com",
+            "homepage": "https://aemaddin.com"
+        }
+    ],
+    "homepage": "https://github.com/aemaddin/mt5webapi",
+    "keywords": ["Laravel", "MT5WebApi"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "aemaddin\\MT5WebApi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "aemaddin\\MT5WebApi\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "aemaddin\\MT5WebApi\\MT5WebApiServiceProvider"
+            ],
+            "aliases": {
+                "MT5WebApi": "aemaddin\\MT5WebApi\\Facades\\MT5WebApi"
+            }
+        }
+    }
+}
